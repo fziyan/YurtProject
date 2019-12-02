@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/yurt?useSSL=false&useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: 1234
+    dbcp2:
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      initial-size: 7
+      max-total: 20
+      pool-prepared-statements: true
+      test-on-borrow: true
